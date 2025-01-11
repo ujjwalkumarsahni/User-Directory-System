@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900">
+    <a href="/read" class="text-xl p-8 underline text-blue-800">All Users</a>
+    <div class="flex justify-center items-center h-screen">
+        <form action="/create" method="post" class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+
+            <h2 class="text-2xl font-semibold text-center mb-6">Create User</h2>
+
+            <form action="/" method="POST">
+                <!-- Name -->
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required>
+                </div>
+
+                <!-- Image URL -->
+                <div class="mb-4">
+                    <label for="imageURL" class="block text-sm font-medium text-gray-700">Image URL</label>
+                    <input type="url" id="imageURL" name="imageURL"
+                        class="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Create
+                    User</button>
+            </form>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
